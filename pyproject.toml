@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcrweb-costopt_jd318"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别推理成本优化顾问·SLO 违约的归因链路的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "pcrweb" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://pcrweb.github.io"
+Repository = "https://github.com/pcrweb/costopt_jd318"
+Issues = "https://github.com/pcrweb/costopt_jd318/issues"
+
+[project.scripts]
+costopt_jd318 = "costopt_jd318:main"
+
+[tool.setuptools]
+py-modules = ["costopt_jd318"]
